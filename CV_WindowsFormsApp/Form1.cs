@@ -187,18 +187,9 @@ namespace CV_WindowsFormsApp
             {
                 MyDbContext myDbContext = new MyDbContext();
 
-                
-               
-                
-
-
-
                     myDbContext.Candidates.Remove(mySelectedRowCandidate);
                     myDbContext.SaveChanges();
  
-
-
-
                 dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
 
                 ListOfCandidates.Remove(mySelectedRowCandidate);
