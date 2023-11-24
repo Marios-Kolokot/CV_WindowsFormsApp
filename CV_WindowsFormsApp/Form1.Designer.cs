@@ -78,15 +78,15 @@ namespace CV_WindowsFormsApp
             // 
             this.button1.Location = new System.Drawing.Point(65, 361);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(93, 23);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Add";
+            this.button1.Text = "Add_Candidate";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(955, 467);
+            this.button2.Location = new System.Drawing.Point(270, 361);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(121, 23);
             this.button2.TabIndex = 3;
@@ -96,13 +96,13 @@ namespace CV_WindowsFormsApp
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(299, 360);
+            this.button3.Location = new System.Drawing.Point(164, 361);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(100, 23);
             this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
+            this.button3.Text = "Edit_Candidate";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.button3Edit_Click);
             // 
             // button4
             // 
@@ -209,7 +209,7 @@ namespace CV_WindowsFormsApp
             // button5
             // 
             this.button5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button5.Location = new System.Drawing.Point(151, 360);
+            this.button5.Location = new System.Drawing.Point(397, 361);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(99, 23);
             this.button5.TabIndex = 17;

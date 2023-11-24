@@ -12,6 +12,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 namespace CV_WindowsFormsApp
@@ -80,6 +81,11 @@ namespace CV_WindowsFormsApp
             selectedRow = dataGridView1.CurrentRow;
 
             mySelectedRowCandidate = (Candidate)selectedRow.DataBoundItem;
+
+            textBox1.Text = mySelectedRowCandidate.FirstName;
+            textBox2.Text = mySelectedRowCandidate.LastName;
+            textBox3.Text = mySelectedRowCandidate.Email;
+            textBox4.Text = mySelectedRowCandidate.Mobile;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -127,7 +133,7 @@ namespace CV_WindowsFormsApp
 
         private void textBox4Mobile_TextChanged(object sender, EventArgs e)
         {
-            _textboxCandidateMobile=textBox4.Text;
+            _textboxCandidateMobile= textBox4.Text;
         }
        
 
@@ -162,9 +168,12 @@ namespace CV_WindowsFormsApp
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3Edit_Click(object sender, EventArgs e)
         {
-
+            if (mySelectedRowCandidate!=null)
+            {
+               // Edit Candidate Logic...
+            }
         }
 
         private void button4RefreshGrid_Click(object sender, EventArgs e)
