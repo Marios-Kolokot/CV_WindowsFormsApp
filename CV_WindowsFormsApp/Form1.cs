@@ -100,18 +100,12 @@ namespace CV_WindowsFormsApp
         private void button5UploadFile_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-
-            // Set the title and filters for the file dialog
             openFileDialog.Title = "Select a File to Upload";
             openFileDialog.Filter = "All Files|*.*";
 
-            // Show the dialog and check if the user selected a file
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                // Get the selected file's path
                 string selectedFilePath = openFileDialog.FileName;
-
-                // Process the file (you can save, display, or perform other actions here)
                 MessageBox.Show($"Selected File: {selectedFilePath}", "File Upload");
             }
         }

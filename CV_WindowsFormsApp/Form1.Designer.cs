@@ -209,7 +209,7 @@ namespace CV_WindowsFormsApp
             // button5
             // 
             this.button5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button5.Location = new System.Drawing.Point(537, 132);
+            this.button5.Location = new System.Drawing.Point(151, 360);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(99, 23);
             this.button5.TabIndex = 17;
